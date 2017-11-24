@@ -1,0 +1,30 @@
+<mat-tab-group >
+  <mat-tab *ngFor="let course of courses" label="{{course.name}}">
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+                <mat-card>
+                  <mat-card-title>{{course.description1.title}}</mat-card-title>
+                  <mat-card-content>{{course.description1.content}}&nbsp;<code style="background-color: #f1f1f1;">{{course.description1.code}}</code></mat-card-content>
+                </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+              <mat-card>
+                <mat-card-title>{{course.description2.title}}</mat-card-title>
+                <mat-card-content>{{course.description2.content}}&nbsp;<code style="background-color: #f1f1f1;">{{course.description2.code}}</code></mat-card-content>
+              </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+              <mat-card>
+                <mat-card-title>{{course.description3.title}}</mat-card-title>
+                <mat-card-content>{{course.description3.content}}&nbsp;<code style="background-color: #f1f1f1;">{{course.description3.code}}</code></mat-card-content>
+              </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card>
+            <mat-card-title>{{course.description4.title}}</mat-card-title>
+            <mat-card-content>{{course.description4.content}}&nbsp;<code style="background-color: #f1f1f1;">{{course.description4.code}}</code></mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+</mat-tab-group>
